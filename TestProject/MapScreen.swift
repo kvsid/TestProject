@@ -6,11 +6,13 @@
 //
 
 import UIKit
+import MapKit
 
 class MapScreen: UIViewController, UITableViewDelegate, UITableViewDataSource {
     var userName: String?
     var placesTable = UITableView()
-    var marks = [Place]()
+    var places = [Place]()
+    var map = MKMapView()
 
 
     override func viewDidLoad() {
@@ -19,11 +21,24 @@ class MapScreen: UIViewController, UITableViewDelegate, UITableViewDataSource {
             view.backgroundColor = .systemGray6
             setupTable()
             requestMarks()
-        print(marks)
+            setupMap()
+
+        for place in places {
+            let annotation = MKPointAnnotation()
+            annotation.coordinate = CLLocationCoordinate2D(latitude: place.lat, longitude: place.lng)
+            annotation.title = place.name
+            map.addAnnotation(annotation)
+        }
+    }
+
+    private func setupMap() {
+        map.frame = CGRect(x: 0, y: 0, width: view.frame.width, height: view.frame.height/2)
+        view.addSubview(map)
     }
 
     private func setupTable() {
-        placesTable = UITableView(frame: view.frame, style: .plain)
+        //placesTable = UITableView(frame: view.frame, style: .plain)
+        placesTable.frame = CGRect(x: 0, y: view.frame.height/2, width: view.frame.width, height: view.frame.height/2)
         placesTable.delegate = self
         placesTable.dataSource = self
         placesTable.register(Cell.self, forCellReuseIdentifier: "place")
@@ -31,12 +46,12 @@ class MapScreen: UIViewController, UITableViewDelegate, UITableViewDataSource {
         view.addSubview(placesTable)
     }
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return marks.count
+        return places.count
     }
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "place", for: indexPath) as! Cell
-        let place = marks[indexPath.row]
+        let place = places[indexPath.row]
         cell.currentPlace.text = place.name
         return cell
         
@@ -77,7 +92,7 @@ class MapScreen: UIViewController, UITableViewDelegate, UITableViewDataSource {
 
                 let decodedData = try JSONDecoder().decode(Marks.self, from: data)
 
-                self.marks = decodedData.places
+                self.places = decodedData.places
                 DispatchQueue.main.async {
                     self.placesTable.reloadData()
                 }

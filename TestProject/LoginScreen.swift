@@ -57,7 +57,6 @@ class LoginScreen : UIViewController {
         signInButton.tintColor = .white
         signInButton.layer.cornerRadius = 5
         signInButton.setTitle("Sign in", for: .normal)
-        signInButton.setTitle("GO!", for: .focused)
         signInButton
             .frame = CGRect(x: 50, y: view.frame.height/2 + 150, width: view.frame.width - 100, height: 40)
         signInButton
