@@ -16,6 +16,8 @@
 		0766797325B5C78E004CCBB4 /* LoginScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0766797225B5C78E004CCBB4 /* LoginScreen.swift */; };
 		0766797625B5C99F004CCBB4 /* MapScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0766797525B5C99F004CCBB4 /* MapScreen.swift */; };
 		0766797925B5CB31004CCBB4 /* CustomField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0766797825B5CB31004CCBB4 /* CustomField.swift */; };
+		0766797C25B5D197004CCBB4 /* Marks.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0766797B25B5D197004CCBB4 /* Marks.swift */; };
+		0766797F25B5D77D004CCBB4 /* Cell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0766797E25B5D77D004CCBB4 /* Cell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +32,8 @@
 		0766797225B5C78E004CCBB4 /* LoginScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginScreen.swift; sourceTree = "<group>"; };
 		0766797525B5C99F004CCBB4 /* MapScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapScreen.swift; sourceTree = "<group>"; };
 		0766797825B5CB31004CCBB4 /* CustomField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomField.swift; sourceTree = "<group>"; };
+		0766797B25B5D197004CCBB4 /* Marks.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Marks.swift; sourceTree = "<group>"; };
+		0766797E25B5D77D004CCBB4 /* Cell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,6 +71,8 @@
 				0766796025B5C6C5004CCBB4 /* ViewController.swift */,
 				0766797225B5C78E004CCBB4 /* LoginScreen.swift */,
 				0766797525B5C99F004CCBB4 /* MapScreen.swift */,
+				0766797B25B5D197004CCBB4 /* Marks.swift */,
+				0766797E25B5D77D004CCBB4 /* Cell.swift */,
 				0766796225B5C6C5004CCBB4 /* Main.storyboard */,
 				0766797825B5CB31004CCBB4 /* CustomField.swift */,
 				0766796525B5C6C7004CCBB4 /* Assets.xcassets */,
@@ -147,9 +153,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				0766796125B5C6C5004CCBB4 /* ViewController.swift in Sources */,
+				0766797C25B5D197004CCBB4 /* Marks.swift in Sources */,
 				0766797325B5C78E004CCBB4 /* LoginScreen.swift in Sources */,
 				0766795D25B5C6C5004CCBB4 /* AppDelegate.swift in Sources */,
 				0766797925B5CB31004CCBB4 /* CustomField.swift in Sources */,
+				0766797F25B5D77D004CCBB4 /* Cell.swift in Sources */,
 				0766795F25B5C6C5004CCBB4 /* SceneDelegate.swift in Sources */,
 				0766797625B5C99F004CCBB4 /* MapScreen.swift in Sources */,
 			);
