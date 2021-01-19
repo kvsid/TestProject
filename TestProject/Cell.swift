@@ -9,8 +9,8 @@ import UIKit
 
 class Cell: UITableViewCell {
     var currentPlace: UILabel = {
-        var name = UILabel(frame: CGRect(x: 20.0, y: 15.0, width: 300.0, height: 30))
-        return name
+        var label = UILabel(frame: CGRect(x: 20.0, y: 15.0, width: 300.0, height: 30))
+        return label
     }()
 
     override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {

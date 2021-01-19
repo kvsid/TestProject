@@ -10,12 +10,12 @@ import UIKit
 class CustomField : UITextField {
     override init(frame: CGRect) {
         super.init(frame: frame)
-        self.layer.cornerRadius = 5
-        self.backgroundColor = .white
-        self.layer.borderColor = UIColor.systemPurple.cgColor
-        self.layer.borderWidth = 3
-        self.textAlignment = .center
-        self.contentVerticalAlignment = .center
+        layer.cornerRadius = 5
+        backgroundColor = .white
+        layer.borderColor = UIColor.systemPurple.cgColor
+        layer.borderWidth = 3
+        textAlignment = .center
+        contentVerticalAlignment = .center
     }
 
     required init?(coder: NSCoder) {
