@@ -17,6 +17,7 @@
 		0766797925B5CB31004CCBB4 /* CustomField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0766797825B5CB31004CCBB4 /* CustomField.swift */; };
 		0766797C25B5D197004CCBB4 /* Marks.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0766797B25B5D197004CCBB4 /* Marks.swift */; };
 		0766797F25B5D77D004CCBB4 /* Cell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0766797E25B5D77D004CCBB4 /* Cell.swift */; };
+		07B402D825B746D100405C60 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 07B402D725B746D100405C60 /* README.md */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,7 @@
 		0766797825B5CB31004CCBB4 /* CustomField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomField.swift; sourceTree = "<group>"; };
 		0766797B25B5D197004CCBB4 /* Marks.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Marks.swift; sourceTree = "<group>"; };
 		0766797E25B5D77D004CCBB4 /* Cell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cell.swift; sourceTree = "<group>"; };
+		07B402D725B746D100405C60 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -48,6 +50,7 @@
 		0766795025B5C6C5004CCBB4 = {
 			isa = PBXGroup;
 			children = (
+				07B402D725B746D100405C60 /* README.md */,
 				0766795B25B5C6C5004CCBB4 /* TestProject */,
 				0766795A25B5C6C5004CCBB4 /* Products */,
 			);
@@ -138,6 +141,7 @@
 			files = (
 				0766796925B5C6C7004CCBB4 /* LaunchScreen.storyboard in Resources */,
 				0766796625B5C6C7004CCBB4 /* Assets.xcassets in Resources */,
+				07B402D825B746D100405C60 /* README.md in Resources */,
 				0766796425B5C6C5004CCBB4 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -14,7 +14,6 @@ class MapScreen: UIViewController, UITableViewDelegate, UITableViewDataSource {
     private var places = [Place]()
     private var map = MKMapView()
 
-
     override func viewDidLoad() {
         super.viewDidLoad()
         title = userName
